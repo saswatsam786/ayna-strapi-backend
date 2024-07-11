@@ -1,61 +1,31 @@
-# 🚀 Getting started with Strapi
+# 🚀 Getting started with Ayna Strapi Backend
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+### `Overview`
+This repository contains the backend API built with Strapi for [Ayna-Chat App](https://github.com/saswatsam786/ayna-chat-client). The application serves as the backend infrastructure for a real-time chat application. It utilizes Strapi as the headless CMS and API generator.
 
-### `develop`
+### `Technologies Used`
+- Strapi
+- Node.js
+- SQLite (default, can be configured for other databases)
+- Socket.io (for real-time features)
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+### ✨Prerequisites
+Before running the project locally, ensure you have the following installed:
+
+Node.js (version 14 or later)
+npm or yarn package manager
+
+### Steps to Setup
 
 ```
+git clone https://github.com/saswatsam786/ayna-strapi-backend
+cd ayna-strapi-backend
+
+npm install
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## Usage
+### Accessing Strapi Admin Panel
+Open your web browser and navigate to http://localhost:1337/admin.
+Use the Strapi Admin panel to manage content types, configure APIs, define roles and permissions, and more.
