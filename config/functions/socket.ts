@@ -4,7 +4,7 @@ module.exports = {
   init: (httpServer, strapi) => {
     const io = new Server(httpServer, {
       cors: {
-        origin: "https://ayna-chat-client.vercel.app/", // Replace with your frontend URL
+        origin: "http://localhost:3000", // Replace with your frontend URL
         methods: ["GET", "POST"],
       },
     });
@@ -38,8 +38,6 @@ module.exports = {
               populate: ["sender", "receiver"],
             }
           );
-
-          console.log(chatMessage);
 
           // const chatMessage = await strapi.services[
           //   "api::message.message"
